@@ -1,4 +1,4 @@
-Pipeline {
+Pipline {
     agent none
     stages {
         stage ('code checkout'){
