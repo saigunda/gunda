@@ -1,45 +1,46 @@
-pipline{
+Pipeline {
     agent none
-    stages{
-        stage('code checkout'){
-        agent{label 'master'}
-           steps{
-              script{
-                  sh "echo hi hello"
-              }
-           } 
+    stages {
+        stage ('code checkout'){
+            steps {
+                script {
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
         }
-        stage('Build'){
-        agent{label 'master'}
-           steps{
-              script{
-                  sh "echo hi hello"
-              }
-           } 
+        stage ('Build'){
+            steps {
+                script {
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
         }
-        stage('Test'){
-        agent{label 'master'}
-           steps{
-              script{
-                  sh "echo hi hello"
-              }
-           } 
+        stage ('Test'){
+            steps {
+                script {
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
         }
-        stage('Deploy'){
-        agent{label 'master'}
-           steps{
-              script{
-                  sh "echo hi hello"
-              }
-           } 
+        stage ('Deploy'){
+            steps {
+                script {
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
         }
-        stage('Release'){
-        agent{label 'master'}
-           steps{
-              script{
-                  sh "echo hi hello"
-              }
-           } 
+        stage ('Release'){
+            steps {
+                script {
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
         }
-    } 
-}     
+        
+    }
+}
