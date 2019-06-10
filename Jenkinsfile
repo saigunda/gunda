@@ -19,5 +19,33 @@ pipeline {
                 }
             }
         }
+		stage('test'){
+		agent { label 'master'}
+		steps {
+                script{
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
+        }
+		stage('deploy'){
+		agent { label 'master'}
+		steps {
+                script{
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
+        }
+		stage('release'){
+		agent { label 'master'}
+		steps {
+                script{
+                    sh "echo hi hello how are you"
+                    
+                }
+            }
+        }
+		
     }
 }
